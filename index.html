@@ -1,0 +1,381 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cardapiozinho</title>
+</head>
+<style>
+    @import url('https://fonts.googleapis.com/css2?family=Fredericka+the+Great&display=swap');
+    @import url('https://fonts.googleapis.com/css2?family=Dancing+Script&family=Indie+Flower&display=swap');
+    @import url('https://fonts.googleapis.com/css2?family=Parisienne&display=swap');
+    @import url('https://fonts.googleapis.com/css2?family=Beth+Ellen&display=swap');
+    body {
+        background-color: black;
+    }
+    h1 {
+        color: whitesmoke;
+        text-align: center;
+        font-size: 60px;
+        font-family: 'Parisienne', cursive;
+        font-weight: unset;
+    }
+    div {
+        color: white;
+    }
+    ul#recipes {
+        width: 1900px;
+        margin: 0px;
+        padding: 10px;
+        overflow: hidden;
+        list-style: none;
+        margin-top: -29px;
+    }
+    ul#recipes li.recip{
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 15px;
+        float: left;
+        width: 200px ;
+        height: 200px;
+        margin: 12px;
+        margin-bottom: 30px;
+        border: 2px solid #ffffff2a;
+        background-color: rgba(0, 0, 0, 0.445);
+        box-shadow: 1px 1px 6px rgba(238, 238, 238, 0.397);
+    }
+    figcaption {
+        position: absolute;
+        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        margin-top: -200px;
+        opacity: 0;
+        margin-left: 20px;
+    }
+    ul#recipes li:hover figcaption {
+        opacity: 1;
+    }
+    ul#recipes li:hover img {
+        opacity: 0.5;
+    }
+    ul#weekdays {
+        font-size: 26px;
+        list-style: none;
+        overflow: hidden;
+        padding: 10px;
+        margin-top: 10px;
+        margin-left: 180px;
+        width: 1900px;
+        position: absolute;
+        top: 660px;
+        width: 100%; 
+        font-family: 'Fredericka the Great', cursive;
+    }
+    ul#weekdays li{
+        float: left;  
+    }
+    img#bb {
+        position: relative;
+        width: 100%;
+    }
+    h2#msg {
+        font-size: 25px;
+        margin-left: 660px;
+        margin-top: -210px;
+        overflow: hidden;
+        position: absolute;
+        font-family: 'Beth Ellen', cursive;
+        font-weight:lighter;
+        
+    }
+    li.dds{
+        text-align: center;
+        width: 200px;
+        height: 250px;
+        margin-right: 100px;
+        padding-top: 3px;
+
+    }
+    h3.lista {
+        font-family: 'Indie Flower', cursive;
+        margin-top: 60px;
+        font-weight: unset;
+        font-size: 35px;
+    }
+    ul#opt li {
+        width: 0px;
+       
+    }
+</style>
+<body>
+    <h1>
+        Cardápio
+    </h1>
+    <div>
+        <ul id="recipes">
+            <li class="recip">
+                <img src="macarrao.png" alt="" ondragstart="DragStart('Macarrão')">
+                <figcaption>
+                    <p>
+                        Opções: 
+                        <ul>
+                            <li>Manjericão</li>
+                            <li>alho e óleo</li>
+                            <li>Atum</li>
+                        </ul> 
+                    </p>
+                </figcaption>
+                Macarrão
+            </li>
+            <li class="recip">
+         
+                <img src="porquinho.png" alt="" ondragstart="DragStart('Porquinho')">
+                <figcaption>
+                    <p>
+                        Opções: 
+                        <ul>
+                            <li>Arroz e Feijão</li>
+                            <li>Batata</li>
+                            <li>Salada</li>
+                        </ul>
+                    </p>
+                </figcaption>
+                Porquinho  
+            </li>
+            <li class="recip">
+          
+                <img src="sardinha.png" alt="" ondragstart="DragStart('Sardinha')">  
+                <figcaption>
+                    <p>
+                        Opções: 
+                        <ul>
+                            <li>Arroz e Feijão</li>
+                            <li>Pimentão</li>
+                        </ul>
+                    </p>
+                </figcaption>
+                Sardinha  
+            </li>
+            <li class="recip">
+             
+                <img src="yakissoba.png" alt="" ondragstart="DragStart('Yakissoba')">  
+                <figcaption>
+                    <p>
+                        
+                    </p>
+                </figcaption>
+                Yakissoba
+            </li>
+            <li class="recip">
+           
+                <img src="kare.png" alt="" ondragstart="DragStart('Karê')">  
+                <figcaption>
+                    <p>
+                        Opções: 
+                        <ul>
+                            <li>Arroz Japonês</li>
+                            <li>Salada</li>
+                        </ul>
+                    </p>
+                </figcaption>
+                Karê
+            </li>
+            <li class="recip">
+         
+                <img src="yakimeshi.png" alt="" ondragstart="DragStart('Yakimeshi')">  
+                <figcaption>
+                    <p>
+                        Opções: 
+                        <ul>
+                            <li>Tofu Xadrez</li>
+                            <li>Mapotofu</li>
+                            <li>Tofu Teriyaki</li>
+                        </ul>
+                    </p>
+                </figcaption>
+                Yakimeshi
+            </li>
+            <li class="recip">
+       
+                <img src="amburguinho.png" alt="" ondragstart="DragStart('Amburguinho')">  
+                <figcaption>
+                    <p>
+                        Opções: 
+                        <ul>
+                            <li>Arroz e Feijão</li>
+                            <li>Refogado de legumes</li>
+                        </ul>
+                    </p>
+                </figcaption>
+                Amburgui
+            </li>
+            <li class="recip">
+              
+                <img src="arroz de tomate.png" alt="" ondragstart="DragStart('Arroz de Tomate')">  
+                <figcaption>
+                    <p>
+                        
+                    </p>
+                </figcaption>
+                Arroz de tomate
+            </li>
+            <li class="recip">
+            
+                <img src="arroz de feijao.png" alt="" ondragstart="DragStart('Arroz de Feijão')">  
+                <figcaption>
+                    <p>
+                        
+                    </p>
+                </figcaption>
+                Arroz de Feijão
+            </li>
+            <li class="recip">
+             
+                <img src="feijoada.png" alt="" ondragstart="DragStart('Feijoada')">  
+                <figcaption>
+                    <p>
+                        Opções: 
+                        <ul>
+                            <li>Arroz branco</li>
+                            <li>Couve</li>
+                            <li>Farofa</li>
+                            <li>Vinagrete</li>
+                        </ul>
+                </figcaption>
+                Feijoada
+            </li>
+            <li class="recip">
+
+                <img src="ratatouille.png" alt="" ondragstart="DragStart('Ratatouille')">  
+                <figcaption>
+                    <p>
+                        Opções: 
+                        <ul>
+                            <li>Arroz branco</li>
+                        </ul>
+                    </p>
+                </figcaption>
+                Ratatouille
+            </li>
+            <li class="recip">
+               
+                <img src="berinjela parmegianna.png" alt="" ondragstart="DragStart('Berinjela à Parmegiana')">  
+                <figcaption>
+                    <p>
+                        Opções: 
+                        <ul>
+                            <li>Arroz branco</li>
+                        </ul>
+                    </p>
+                </figcaption>
+                Berinjela à Parmegiana
+            </li>
+            <li class="recip">
+               
+                <img src="nhoque.png" alt="" ondragstart="DragStart('Nhoque')">  
+                <figcaption>
+                    <p>
+                        
+                        
+                    </p>
+                </figcaption>
+                Nhoque
+            </li>
+            <li class="recip">
+               
+                <img src="caldo verde.png" alt="" ondragstart="DragStart('Caldo Verde')">  
+                <figcaption>
+                    <p>
+                        Opções:
+                        <ul>
+                            <li>Arroz Japonês</li>
+                        </ul>
+                    </p>
+                </figcaption>
+                Caldo Verde
+            </li>
+            <li class="recip">
+               
+                <img src="lentilha.png" alt="" ondragstart="DragStart('Lentilha')">  
+                <figcaption>
+                    <p>
+                        Opções:
+                        <ul>
+                            <li>Arroz branco</li>
+                        </ul>
+                    </p>
+                </figcaption>
+                Lentilha
+            </li>
+            <li class="recip">
+                
+                <img src="milho verde.png" alt="" ondragstart="DragStart('Milho Verde')">  
+                <figcaption>
+                    <p>
+                        Opções:
+                        <ul>
+                            <li>Arroz e Feijão</li>
+                        </ul>
+                    </p>
+                </figcaption>
+                Milho Verde
+            </li>
+        </ul>
+    </div>
+    <div id="quadro" >
+        <img id="bb" src="blackboard3.jpg" alt="">
+        <ul id="weekdays">
+            
+            <li class="dds" ondragover="Drop(event)" ondrop="drop(segunda)">
+                SEG 
+                <h3 id="segunda" class="lista">
+
+                </h3>
+            </li>
+            <li class="dds" ondragover="Drop(event)" ondrop="drop(terca)">
+                TER
+                <h3 id="terca" class="lista">
+
+                </h3>
+            </li>
+            <li class="dds" ondragover="Drop(event)" ondrop="drop(quarta)">
+                QUA
+                <h3 id="quarta" class="lista">
+
+                </h3>
+            </li>
+            <li class="dds" ondragover="Drop(event)" ondrop="drop(quinta)">
+                QUI
+                <h3 id="quinta" class="lista">
+
+                </h3>
+            </li>
+            <li class="dds" ondragover="Drop(event)" ondrop="drop(sexta)">
+                SEX
+                <h3 id="sexta" class="lista">
+                    
+                </h3>
+            </li>
+            
+        </ul>
+        <h2 id="msg">Arraste os pratos nos dias da semana! </h2>
+    </div>
+</body>
+<script>
+    var id;
+    var cont = 0;
+
+    function Drop(ev){
+        ev.preventDefault();
+    }
+
+    function DragStart(n){
+        id = n
+    }
+    function drop(m) {
+        msg.innerHTML = '';
+        m.innerHTML = id;
+       
+    }
+   
+
+</script>
+</html>
